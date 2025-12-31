@@ -75,7 +75,7 @@ const Header: React.FC = () => {
       <div className="lg:py-0 py-2">
         <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) flex items-center justify-between px-4">
           <div
-            className={`pr-16 border-r border-black/60 duration-300 ${sticky ? "py-3" : "py-7"
+            className={`pr-16 border-r border-black/60 duration-300 self-stretch flex items-center ${sticky ? "py-3" : "py-7"
               }`}
           >
             <Logo />
@@ -86,7 +86,7 @@ const Header: React.FC = () => {
             ))}
           </nav>
           <div
-            className={`flex items-center gap-4 pl-16 border-l border-black/60 duration-300 ${sticky ? "py-3" : "py-7"
+            className={`flex items-center gap-4 pl-16 border-l border-black/60 duration-300 self-stretch ${sticky ? "py-3" : "py-7"
               }`}
           >
             <button
@@ -150,9 +150,9 @@ const Header: React.FC = () => {
               className="block lg:hidden p-2 rounded-lg"
               aria-label="Toggle mobile menu"
             >
-              <span className="block w-6 h-0.5 bg-white"></span>
-              <span className="block w-6 h-0.5 bg-white mt-1.5"></span>
-              <span className="block w-6 h-0.5 bg-white mt-1.5"></span>
+              <span className="block w-6 h-0.5 bg-black"></span>
+              <span className="block w-6 h-0.5 bg-black mt-1.5"></span>
+              <span className="block w-6 h-0.5 bg-black mt-1.5"></span>
             </button>
           </div>
         </div>
@@ -166,7 +166,9 @@ const Header: React.FC = () => {
         >
           <div className="flex items-center justify-between p-4">
             <h2 className="text-lg font-bold text-midnight_text dark:text-midnight_text">
-              <Logo />
+              <div className="brightness-0 invert">
+                <Logo />
+              </div>
             </h2>
 
             {/*  */}

@@ -33,7 +33,7 @@ const Join = () => {
             <div>
               <input
                 type="email"
-                className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:border-l border-linegrey bg-transparent focus:outline-hidden bg-emailbg focus:text-black"
+                className="my-4 mb-4 py-4 sm:pl-6 lg:text-xl text-black sm:border-l border-linegrey bg-transparent focus:outline-hidden bg-emailbg focus:text-black"
                 placeholder="Your email"
                 autoComplete="off"
               />

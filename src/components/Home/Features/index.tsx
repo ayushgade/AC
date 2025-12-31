@@ -52,13 +52,13 @@ const Features = () => {
       <div className="container mx-auto lg:max-w-(--breakpoint-xl) px-4">
         {/* Tab Navigation */}
         <ul
-          className="flex flex-wrap border-b border-gray-200 dark:border-gray-700 mb-8"
+          className="grid grid-cols-4 border-b border-gray-200 dark:border-gray-700 mb-8"
           role="tablist"
         >
           {tabs.map((tab) => (
             <li
               key={tab.id}
-              className="flex-1 min-w-0 basis-full sm:basis-1/2 lg:basis-1/4"
+              className="w-full"
               role="presentation"
             >
               <button

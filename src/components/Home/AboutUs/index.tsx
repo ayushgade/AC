@@ -6,9 +6,11 @@ import { Aboutdata } from "@/app/api/data";
 
 const Aboutus = () => {
   return (
-    <section className=" bg-cover bg-center dark:bg-darkmode overflow-hidden">
+    <section className=" bg-cover bg-center dark:bg-darkmode overflow-hidden"
+    id="features"
+    style={{ paddingBottom: "0px" }}>
       <div className="container mx-auto lg:max-w-(--breakpoint-xl) relative z-1 md:max-w-(--breakpoint-md)">
-        <div className="lg:p-12 px-2 bg-grey dark:bg-darkmode rounded-3xl">
+        <div className="lg:p-12  px-2 bg-grey dark:bg-darkmode rounded-3xl">
           <Image
             src="/images/aboutus/dots.svg"
             width={100}
@@ -17,7 +19,7 @@ const Aboutus = () => {
             className="absolute bottom-1 -left-20"
           />
          
-          <h4 className="text-center text-4xl lg:text-65 font-bold pb-12">
+          <h4 className="text-center text-4xl lg:text-65 font-bold pb-12 pt-6 md:mt-0">
             Our Services
           </h4>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-16 lg:gap-x-32 mt-16">

@@ -21,24 +21,25 @@ const Hero = () => {
 
   return (
     <section
-      className="relative md:pt-40 py-20 overflow-hidden z-1"
+      className="relative pt-[90px] md:pt-40 py-20 overflow-hidden z-10"
       id="main-banner"
       style={{ paddingBottom: "0px" }}
     >
-      <div className="container mx-auto lg:max-w-(--breakpoint-xl) px-4">
-        <div className="grid grid-cols-12 justify-center items-center">
-          <div className="col-span-5">
-            <h1 className="text-5xl font-bold">
+      <div className="container py-12 mx-auto lg:max-w-(--breakpoint-xl) px-4">
+        <div className="grid grid-cols-1 md:grid-cols-12 justify-center items-center gap-8 md:gap-0">
+        <div className="col-span-1 md:col-span-5 order-1">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
               Elevating Your Business By Unlocking The Power Of Data
             </h1>
-            <p className="mt-4 text-xl text-gray-700 max-w-xl">
+            <p className="mt-4 text-base sm:text-lg md:text-xl text-gray-700 max-w-xl">
               We are an end-to-end data company specializing in Data Strategy, Data Engineering &amp; Data Analytics.
             </p>
-            <button className="bg-primary text-white text-xl font-semibold mt-5 py-5 px-12 rounded-full hover:bg-darkmode">
+            <button className="bg-primary text-white text-base sm:text-lg md:text-xl font-semibold mt-5 py-3 px-8 sm:py-4 sm:px-10 md:py-5 md:px-12 rounded-full hover:bg-darkmode transition-colors">
               Get started
             </button>
           </div>
-          <div className="col-span-7 mx-20">
+          <div className="col-span-1 md:col-span-7 md:mx-20 order-2 mt-8 md:mt-0">
+
             <Image
               src="/images/hero/hero_bannar.png"
               alt="banner image"

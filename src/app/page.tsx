@@ -25,11 +25,11 @@ export default function Home() {
       <Hero />
       <Features />
       <Aboutus />
-      <Dedicated />
+      {/* <Dedicated /> */}
       <Digital />
       <Beliefs />
       <Work />
-      <Team />
+      {/* <Team /> */}
       {/* <Featured /> */}
       {/* <Manage /> */}
       {/* <FAQ /> */}
